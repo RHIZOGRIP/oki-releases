@@ -18,7 +18,24 @@ To check the signature of `SHA256SUMS` with [minisign](https://jedisct1.github.i
 
     minisign -Vm SHA256SUMS -P RWTqgYgvih8mgn6Xm9lx32sKVG6Fz5pFYcCHvOPFZy72Le/ftnTJsjoW
 
-## Licence
+## Licences
 
-Oki is licensed AGPL-3.0-only. The code it installs is on your computer, inside Oki, and you may read,
-change and share it under that licence. The development repository is not public yet.
+Oki is put together from several works, each under its own licence:
+
+- **Oki itself** (its management pages and service, its installer and launcher) and **the web
+  connector**, `@rhizogrip/spore-plugin-web`: AGPL-3.0-only. A commercial licence is available
+  instead, from the copyright holder.
+- **spore**, the agent runtime Oki runs: Apache License 2.0.
+- **mohdel**, which spore calls AI models through: MIT License.
+- **Everything else**: Node.js, the Debian system Oki runs in, and several hundred npm and Debian
+  packages, each under its own open-source licence.
+
+Where to find them once Oki is installed, inside Oki:
+
+- each npm package, with its licence file, is under `/opt/oki/node_modules`, and
+  `/opt/oki/package-lock.json` lists them all with their versions;
+- each Debian package has its licence at `/usr/share/doc/<package>/copyright`, and
+  `/opt/oki/dpkg.txt` lists them all with their versions.
+
+The development repositories of Oki and of the web connector are not public yet. Their code as
+installed is on your computer, inside Oki, under the licence above.
