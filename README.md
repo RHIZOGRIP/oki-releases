@@ -25,8 +25,7 @@ To check the signature of `SHA256SUMS` with [minisign](https://jedisct1.github.i
 Oki is put together from several works, each under its own licence:
 
 - **Oki itself** (its management pages and service, its installer and launcher) and **the web
-  connector**, `@rhizogrip/spore-plugin-web`: AGPL-3.0-only. If the AGPL does not suit
-  your use, you can ask for a commercial licence at hi@keepoki.com.
+  connector**, `@rhizogrip/spore-plugin-web`: AGPL-3.0-only.
 - **spore**, the agent runtime Oki runs: Apache License 2.0.
 - **mohdel**, which spore calls AI models through: MIT License.
 - **Everything else**: Node.js, the Debian system Oki runs in, and several hundred npm and Debian
